@@ -11,7 +11,7 @@
 #  **************************************************************************  #
 
 # v2
-# 최적화
+# 가독성 최적화
 
 import sys
 
@@ -21,7 +21,7 @@ words = [sys.stdin.readline().strip() for _ in range(n)]
 # 중복 제거
 words = list(set(words))
 
-# 길이 기준 정렬 (긴 단어 우선)
+# 사전식 정렬(반대)
 words.sort(reverse=True)
 
 # 접두사 체크 함수
