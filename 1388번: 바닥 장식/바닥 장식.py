@@ -38,15 +38,11 @@ def bfs(h, w):
             if ground[ny][nx] == "|":
                 q.append((nx, ny))
                 visited[ny][nx] = True
-            else:
-                break
         elif ground[y][x] == "-" and x < m - 1:
             nx, ny = x + 1, y
             if ground[ny][nx] == "-":
                 q.append((nx, ny))
                 visited[ny][nx] = True
-            else:
-                break
 
 for h in range(n):
     for w in range(m):
