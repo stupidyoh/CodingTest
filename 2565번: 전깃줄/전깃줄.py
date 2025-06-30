@@ -23,7 +23,7 @@ connections.sort(key = lambda x: x[0])
 dp = [1] * num_line
 
 # dp 계산
-# B전봇대 기준으로 가장 긴 증가하는 수열 찾기
+# B전봇대 기준으로 가장 긴 증가하는 수열 찾기(자르지 않아도 되는 최대 전깃줄 개수 구하기)
 for i in range(1, num_line):
     for j in range(i):
         if connections[j][1] < connections[i][1]:
