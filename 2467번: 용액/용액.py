@@ -24,6 +24,7 @@ sol_1_idx = left
 sol_2_idx = right
 
 # 이분탐색
+# 두 포인터가 같은 값을 가리키는 경우는 없으므로 = 불가
 while left < right:
     sum_sol = solutions[left] + solutions[right]
 
